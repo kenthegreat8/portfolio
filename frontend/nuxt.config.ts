@@ -27,5 +27,13 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: 'en' }
     },
     baseURL: 'https://kenthegreat8.github.io/'
+  },
+
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      failOnError: false, // Prevents 404 prerender errors from killing the build
+      routes: ['/']
+    }
   }
 })
