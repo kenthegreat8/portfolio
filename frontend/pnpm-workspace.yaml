@@ -1,6 +1,14 @@
 packages:
   - '.'
 
+# Allow-list for dependency postinstall/build scripts (pnpm blocks these by
+# default since v10). Without this, CI fails with ERR_PNPM_IGNORED_BUILDS
+# even though it's silent locally (this machine's pnpm store already has
+# these built from earlier work).
+onlyBuiltDependencies:
+  - esbuild
+  - vue-demi
+
 minimumReleaseAgeExclude:
   - '@nuxt/ui@4.11.0'
 
