@@ -1,0 +1,15 @@
+packages:
+  - '.'
+  - 'frontend'
+
+allowBuilds:
+  esbuild: true
+  vue-demi: true
+
+minimumReleaseAgeExclude:
+  - '@nuxt/ui@4.11.0'
+
+supportedArchitectures:
+  cpu:
+    - current
+    - wasm32
