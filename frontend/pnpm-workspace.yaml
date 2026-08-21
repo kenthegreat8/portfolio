@@ -1,3 +1,6 @@
+packages:
+  - '.'
+
 minimumReleaseAgeExclude:
   - '@nuxt/ui@4.11.0'
 
