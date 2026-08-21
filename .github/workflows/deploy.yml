@@ -39,7 +39,7 @@ jobs:
 
       - name: Install dependencies
         working-directory: frontend
-        run: pnpm install --frozen-lockfile --config.ignore-scripts=false --config.minimum-release-age=0 --only-allow-built-dependencies=esbuild,vue-demi
+        run: pnpm install --frozen-lockfile --config.ignore-scripts=false --config.minimum-release-age=0 --dangerously-allow-all-builds
 
       - name: Generate static site
         working-directory: frontend
