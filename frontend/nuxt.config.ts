@@ -25,6 +25,7 @@ export default defineNuxtConfig({
     head: {
       titleTemplate: '%s · Ken Nze',
       htmlAttrs: { lang: 'en' }
-    }
+    },
+    baseURL: 'https://kenthegreat8.github.io/'
   }
 })
