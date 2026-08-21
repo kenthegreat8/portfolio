@@ -7,7 +7,7 @@
  * Tailwind-style scales so Nuxt UI can pick the right shade per state
  * (hover, active, dark/light) automatically via `app.config.ts`.
  */
-@theme {
+@theme static {
   --color-ruby-50: #fdf2f4;
   --color-ruby-100: #fce1e6;
   --color-ruby-200: #fbc7d0;
