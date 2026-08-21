@@ -29,6 +29,13 @@ jobs:
           node-version: 22
           cache: pnpm
           cache-dependency-path: frontend/pnpm-lock.yaml
+    
+
+
+      - name: Approve dependency build scripts
+        working-directory: frontend
+        run: pnpm approve-builds --all
+
 
       - name: Install dependencies
         working-directory: frontend
