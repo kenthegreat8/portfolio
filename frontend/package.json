@@ -39,5 +39,9 @@
   "devDependencies": {
     "@iconify-json/lucide": "^1.2.30",
     "@iconify-json/simple-icons": "^1.2.29"
-  }
+  },
+  "onlyBuiltDependencies": [
+    "esbuild",
+    "vue-demi"
+  ]
 }
