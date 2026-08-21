@@ -12,7 +12,7 @@ const skillGroups = [
     <h2 class="text-2xl font-bold tracking-tight">
       Skills
     </h2>
-    <div class="mt-6 grid gap-8 sm:grid-cols-3">
+    <div class="mt-6 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
       <div v-for="group in skillGroups" :key="group.label">
         <h3 class="text-sm font-semibold text-muted uppercase tracking-wide">
           {{ group.label }}
@@ -22,7 +22,7 @@ const skillGroups = [
             v-for="skill in group.skills"
             :key="skill"
             variant="subtle"
-            color="neutral"
+            color="primary"
           >
             {{ skill }}
           </UBadge>

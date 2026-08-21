@@ -4,6 +4,9 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxt/ui', '@nuxt/content'],
   css: ['~/assets/css/main.css'],
+  // Dark mode is the brand default; 'fallback' covers browsers/crawlers that
+  // don't report a system preference at all.
+  colorMode: { preference: 'dark', fallback: 'dark' },
   // Global registration so components used inside markdown (MDC) resolve at
   // runtime — auto-imported local components aren't visible to MDCRenderer.
   // pathPrefix: false preserves the default un-prefixed naming for nested
@@ -18,7 +21,7 @@ export default defineNuxtConfig({
     // Icon names referenced dynamically (e.g. via a JS array, not a literal
     // string in a template) aren't caught by the client bundle auto-scan.
     clientBundle: {
-      icons: ['lucide:mail', 'lucide:network', 'lucide:external-link', 'lucide:hash', 'simple-icons:github', 'simple-icons:linkedin']
+      icons: ['lucide:mail', 'lucide:network', 'lucide:external-link', 'lucide:hash', 'lucide:user', 'simple-icons:github', 'simple-icons:linkedin']
     }
   },
   app: {
@@ -26,6 +29,11 @@ export default defineNuxtConfig({
       titleTemplate: '%s · Ken Nze',
       htmlAttrs: { lang: 'en' }
     },
+    // NOTE: once keninze.com is purchased and its DNS points at GitHub Pages,
+    // switch this back to '/', add a public/CNAME file containing
+    // "keninze.com", and set the custom domain in the repo's Pages settings.
+    // Doing that before the domain/DNS is live would break the current
+    // github.io URL, so leave this as-is until then.
     baseURL: '/portfolio/',
     buildAssetsDir: '_nuxt',
   },

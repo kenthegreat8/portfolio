@@ -5,6 +5,12 @@ const links = [
   { label: 'About', to: '/about' },
   { label: 'Contact', to: '/contact' }
 ]
+
+const route = useRoute()
+
+function isActive(to: string) {
+  return to === '/' ? route.path === '/' : route.path.startsWith(to)
+}
 </script>
 
 <template>
@@ -13,8 +19,8 @@ const links = [
       v-for="link in links"
       :key="link.to"
       :to="link.to"
-      variant="ghost"
-      color="neutral"
+      :variant="isActive(link.to) ? 'soft' : 'ghost'"
+      :color="isActive(link.to) ? 'primary' : 'neutral'"
     >
       {{ link.label }}
     </UButton>

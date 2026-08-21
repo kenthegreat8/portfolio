@@ -1,2 +1,34 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
+
+/*
+ * Brand palette: a rich crimson/ruby accent (not a neon/pure red) paired
+ * with a warm charcoal neutral (not pitch black). Both are full 50-950
+ * Tailwind-style scales so Nuxt UI can pick the right shade per state
+ * (hover, active, dark/light) automatically via `app.config.ts`.
+ */
+@theme {
+  --color-ruby-50: #fdf2f4;
+  --color-ruby-100: #fce1e6;
+  --color-ruby-200: #fbc7d0;
+  --color-ruby-300: #f6a0b0;
+  --color-ruby-400: #ec7089;
+  --color-ruby-500: #dc3f5d;
+  --color-ruby-600: #c22a48;
+  --color-ruby-700: #9e1f3a;
+  --color-ruby-800: #7c1b30;
+  --color-ruby-900: #5c1526;
+  --color-ruby-950: #2e0a13;
+
+  --color-charcoal-50: #f7f6f6;
+  --color-charcoal-100: #ededeb;
+  --color-charcoal-200: #dad6d4;
+  --color-charcoal-300: #b9b3b0;
+  --color-charcoal-400: #928985;
+  --color-charcoal-500: #6e635f;
+  --color-charcoal-600: #544a47;
+  --color-charcoal-700: #403836;
+  --color-charcoal-800: #2b2524;
+  --color-charcoal-900: #1c1817;
+  --color-charcoal-950: #121010;
+}
