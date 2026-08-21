@@ -26,7 +26,7 @@ export default defineNuxtConfig({
       titleTemplate: '%s · Ken Nze',
       htmlAttrs: { lang: 'en' }
     },
-    baseURL: 'https://kenthegreat8.github.io/'
+    baseURL: 'https://kenthegreat8.github.io/portfolio/'
   },
 
   nitro: {
