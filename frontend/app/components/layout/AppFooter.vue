@@ -10,7 +10,10 @@ const socials = [
 <template>
   <footer class="border-t border-default">
     <div class="mx-auto flex max-w-5xl flex-col items-center gap-4 px-4 py-8 text-sm text-muted sm:flex-row sm:justify-between sm:px-6">
-      <p>&copy; {{ year }} Ken Nze <span class="text-charcoal-500">· xKen_t</span>. All rights reserved.</p>
+      <div class="flex items-center gap-2">
+        <img src="/logo-mark.png" alt="" class="h-6 w-auto">
+        <p>&copy; {{ year }} Ken Nze <span class="text-charcoal-500">· xKen_t</span>. All rights reserved.</p>
+      </div>
       <div class="flex gap-2">
         <UButton
           v-for="social in socials"

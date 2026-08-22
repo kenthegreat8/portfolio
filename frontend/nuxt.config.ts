@@ -30,14 +30,11 @@ export default defineNuxtConfig({
       htmlAttrs: { lang: 'en' },
       link: [
         // This replaces the Nuxt mountain icon with your new K N logo
-        { rel: 'icon', type: 'image/png', href: '/logo.ico' }
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
       ],
     },
-    // NOTE: once keninze.com is purchased and its DNS points at GitHub Pages,
-    // switch this back to '/', add a public/CNAME file containing
-    // "keninze.com", and set the custom domain in the repo's Pages settings.
-    // Doing that before the domain/DNS is live would break the current
-    // github.io URL, so leave this as-is until then.
+    // keninze.com is live and pointed at GitHub Pages, so the site now
+    // serves from the domain root rather than a /portfolio/ subpath.
     baseURL: '/',
     buildAssetsDir: '_nuxt',
   },
