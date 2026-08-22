@@ -27,7 +27,11 @@ export default defineNuxtConfig({
   app: {
     head: {
       titleTemplate: '%s · Ken Nze',
-      htmlAttrs: { lang: 'en' }
+      htmlAttrs: { lang: 'en' },
+      link: [
+        // This replaces the Nuxt mountain icon with your new K N logo
+        { rel: 'icon', type: 'image/png', href: '/logo.ico' }
+      ],
     },
     // NOTE: once keninze.com is purchased and its DNS points at GitHub Pages,
     // switch this back to '/', add a public/CNAME file containing
