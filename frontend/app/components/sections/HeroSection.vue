@@ -3,7 +3,7 @@
 
 <template>
   <section class="mx-auto max-w-5xl px-4 py-24 sm:px-6">
-    <img src="/logo-mark.png" alt="" class="h-20 w-auto sm:h-24">
+    <img src="/ken-logo-horizontal.png" alt="" class="h-20 w-auto sm:h-24">
     <p class="mt-6 text-sm font-medium text-primary">
       Full-Stack Developer
     </p>
