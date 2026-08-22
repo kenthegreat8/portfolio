@@ -34,7 +34,7 @@ export default defineNuxtConfig({
     // "keninze.com", and set the custom domain in the repo's Pages settings.
     // Doing that before the domain/DNS is live would break the current
     // github.io URL, so leave this as-is until then.
-    baseURL: '/portfolio/',
+    baseURL: '/',
     buildAssetsDir: '_nuxt',
   },
 
