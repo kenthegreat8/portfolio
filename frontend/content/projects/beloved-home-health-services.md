@@ -8,6 +8,7 @@ stack:
   - Tailwind CSS
 visibility: private
 repoUrl: https://github.com/kenthegreat8/BelovedHomeHealth
+liveUrl: https://belovedhomehealthservices.com/
 featured: true
 date: '2026-08-22'
 ---
