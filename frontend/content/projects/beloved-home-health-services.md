@@ -6,6 +6,7 @@ stack:
   - Vue 3
   - TypeScript
   - Tailwind CSS
+  - Docker
 visibility: private
 repoUrl: https://github.com/kenthegreat8/BelovedHomeHealth
 liveUrl: https://belovedhomehealthservices.com/
