@@ -103,10 +103,12 @@ onMounted(() => {
         </div>
 
         <div data-reveal-item class="mx-auto w-full max-w-sm" style="perspective: 800px">
-          <div ref="cardRef" class="relative aspect-4/5 rounded-3xl border border-default bg-elevated/50 backdrop-blur-sm">
-            <div class="flex h-full items-center justify-center">
-              <UAvatar icon="i-lucide-user" size="3xl" class="opacity-60" />
-            </div>
+          <div ref="cardRef" class="relative aspect-4/5 overflow-hidden rounded-3xl border border-default bg-elevated/50 backdrop-blur-sm">
+            <img
+              src="/avatar-hero.jpg"
+              alt="Ken Nze"
+              class="h-full w-full object-cover"
+            >
             <img
               src="/logo-mark.png"
               alt=""
