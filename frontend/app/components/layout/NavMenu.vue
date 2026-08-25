@@ -19,6 +19,8 @@ function isActive(to: string) {
       v-for="link in links"
       :key="link.to"
       :to="link.to"
+      size="sm"
+      class="rounded-full"
       :variant="isActive(link.to) ? 'soft' : 'ghost'"
       :color="isActive(link.to) ? 'primary' : 'neutral'"
     >

@@ -21,7 +21,15 @@ export default defineNuxtConfig({
     // Icon names referenced dynamically (e.g. via a JS array, not a literal
     // string in a template) aren't caught by the client bundle auto-scan.
     clientBundle: {
-      icons: ['lucide:mail', 'lucide:network', 'lucide:external-link', 'lucide:hash', 'lucide:user', 'simple-icons:github', 'simple-icons:linkedin']
+      icons: [
+        'lucide:mail', 'lucide:network', 'lucide:external-link', 'lucide:hash', 'lucide:user',
+        'lucide:monitor', 'lucide:server', 'lucide:wrench', 'lucide:flame',
+        'lucide:rocket', 'lucide:layers', 'lucide:award',
+        'lucide:sparkles', 'lucide:folder-git-2', 'lucide:arrow-left',
+        'simple-icons:github', 'simple-icons:linkedin',
+        'simple-icons:nuxtdotjs', 'simple-icons:vuedotjs', 'simple-icons:typescript',
+        'simple-icons:python', 'simple-icons:fastapi', 'simple-icons:mongodb', 'simple-icons:docker'
+      ]
     }
   },
   app: {

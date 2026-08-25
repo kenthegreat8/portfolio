@@ -13,10 +13,17 @@ useSeo({
   title: project.value.title,
   description: project.value.summary
 })
+
+const articleRef = ref<HTMLElement | null>(null)
+useReveal(articleRef)
 </script>
 
 <template>
-  <article v-if="project" class="mx-auto max-w-3xl px-4 py-16 sm:px-6">
+  <article v-if="project" ref="articleRef" class="mx-auto max-w-3xl px-4 py-20 sm:px-6">
+    <UButton to="/projects" variant="link" color="neutral" icon="i-lucide-arrow-left" size="sm" class="mb-4 -ml-2">
+      Back to projects
+    </UButton>
+
     <div class="flex items-center gap-2">
       <UBadge
         :color="project.visibility === 'private' ? 'warning' : 'success'"

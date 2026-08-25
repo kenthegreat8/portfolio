@@ -8,7 +8,8 @@ const socials = [
 </script>
 
 <template>
-  <footer class="border-t border-default">
+  <footer class="relative border-t border-default">
+    <div class="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-primary/50 to-transparent" aria-hidden="true" />
     <div class="mx-auto flex max-w-5xl flex-col items-center gap-4 px-4 py-8 text-sm text-muted sm:flex-row sm:justify-between sm:px-6">
       <div class="flex items-center gap-2">
         <img src="/logo-mark.png" alt="" class="h-6 w-auto">
@@ -27,5 +28,8 @@ const socials = [
         />
       </div>
     </div>
+    <p class="pb-6 text-center text-xs text-dimmed">
+      May the code be with you.
+    </p>
   </footer>
 </template>
