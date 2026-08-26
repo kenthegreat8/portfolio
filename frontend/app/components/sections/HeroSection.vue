@@ -103,12 +103,14 @@ onMounted(() => {
         </div>
 
         <div data-reveal-item class="mx-auto w-full max-w-sm" style="perspective: 800px">
-          <div ref="cardRef" class="relative aspect-4/5 overflow-hidden rounded-3xl border border-default bg-elevated/50 backdrop-blur-sm">
-            <img
-              src="/avatar-hero.jpg"
-              alt="Ken Nze"
-              class="h-full w-full object-cover"
-            >
+          <div ref="cardRef" class="relative">
+            <div class="aspect-4/5 overflow-hidden rounded-3xl border border-default bg-elevated/50 backdrop-blur-sm">
+              <img
+                src="/avatar-hero.jpg"
+                alt="Ken Nze"
+                class="h-full w-full object-cover"
+              >
+            </div>
             <img
               src="/logo-mark.png"
               alt=""
