@@ -102,8 +102,8 @@ onMounted(() => {
           </div>
         </div>
 
-        <div data-reveal-item class="mx-auto w-full max-w-sm" style="perspective: 800px">
-          <div ref="cardRef" class="relative aspect-4/5 overflow-hidden rounded-3xl border border-default bg-elevated/50 backdrop-blur-sm">
+        <div data-reveal-item class="mx-auto w-full max-w-md" style="perspective: 800px">
+          <div ref="cardRef" class="relative aspect-3/2 overflow-hidden rounded-3xl border border-default bg-elevated/50 backdrop-blur-sm">
             <img
               src="/avatar-hero.jpg"
               alt="Ken Nze"
