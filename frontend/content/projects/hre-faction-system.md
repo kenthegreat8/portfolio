@@ -283,8 +283,6 @@ owner-only faction management, custom cosmetic slots (banners, logos,
 armors), and exploit-resistant server-authoritative enforcement on every
 mutating endpoint.
 
-**Out of scope (separate engagements):** Roblox datastore cleanup tooling,
-admin/moderation dashboards, ongoing hosting.
 
 ## Credits
 
