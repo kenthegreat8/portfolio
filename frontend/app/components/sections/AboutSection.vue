@@ -10,7 +10,7 @@ useReveal(sectionRef)
         <img
           src="/avatar-badge.webp"
           alt="Ken Nze"
-          class="h-40 w-40 shrink-0 sm:h-48 sm:w-48"
+          class="h-40 w-40 shrink-0 rounded-full shadow-lg shadow-black/40 ring-4 ring-primary/40 sm:h-48 sm:w-48"
         >
         <div>
           <p class="text-xs font-semibold tracking-widest text-primary uppercase">
