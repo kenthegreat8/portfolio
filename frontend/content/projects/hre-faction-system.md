@@ -8,7 +8,7 @@ stack:
   - Rust
   - Luau
   - Roblox API
-visibility: false
+visibility: private
 repoUrl: https://github.com/kenthegreat8/HREFactionSystem
 featured: true
 date: '2026-09-10'
